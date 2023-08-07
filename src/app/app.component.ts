@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { MenuNavbarModel } from './agricola-pertusio/components/navbar/menu-navbar.interface';
 import { Router } from '@angular/router';
-import isNil from "lodash"
 
 @Component( {
   selector: 'app-root',
@@ -48,7 +47,9 @@ export class AppComponent {
   constructor(
     private readonly router: Router
   ) {
-    this.selected = !isNil( Number( localStorage.getItem( 'selected' ) ) ) && Number( localStorage.getItem( 'selected' ) ) !== 4 ? Number( localStorage.getItem( 'selected' ) ) : 0
+    console.log( Number( localStorage.getItem( 'selected' ) ) );
+
+    this.selected = localStorage.getItem( 'selected' ) && Number( localStorage.getItem( 'selected' ) ) !== 4 ? Number( localStorage.getItem( 'selected' ) ) : 0
   }
 
   changePath( path: string ) {
