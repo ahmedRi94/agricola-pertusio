@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { MenuNavbarModel } from './agricola-pertusio/components/navbar/menu-navbar.interface';
 import { Router } from '@angular/router';
+import isNil from "lodash"
 
 @Component( {
   selector: 'app-root',
@@ -33,14 +34,22 @@ export class AppComponent {
       path: "/home-page",
       label: "Agricola pertusio",
       propertyName: "logo"
+    },
+    {
+      path: "/contacts",
+      label: "Contact",
+      propertyName: "contact"
     }
   ]
 
   openVerticalMenu!: boolean;
+  selected: number;
 
   constructor(
     private readonly router: Router
-  ) {}
+  ) {
+    this.selected = !isNil( Number( localStorage.getItem( 'selected' ) ) ) && Number( localStorage.getItem( 'selected' ) ) !== 4 ? Number( localStorage.getItem( 'selected' ) ) : 0
+  }
 
   changePath( path: string ) {
     this.router.navigateByUrl( path )

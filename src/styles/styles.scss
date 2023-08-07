@@ -11,11 +11,14 @@
 @import "./material_theme";
 
 html,
-body {
+body,
+mat-sidenav-content {
   height: 100%;
 }
 
-body {
+body,
+mat-sidenav-content {
+  background-color: var(--tertiary);
   margin: 0;
   font-family: 'Montserrat', 'The Seasons';
 }

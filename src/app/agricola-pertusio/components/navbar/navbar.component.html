@@ -1,15 +1,25 @@
 <mat-toolbar-row>
-    <div [fxShow]="!isMobile">
-        <mat-list class="d-flex text-center">
-            <mat-list-item *ngFor="let menu of menu" [class.desktop]="!isMobile" (click)="goTo(menu.path)">
-                <ng-container *ngIf="menu.propertyName!=='logo';else logoName">
-                    <p class="mb-0">{{ menu.label }}</p>
-                </ng-container>
-                <ng-template #logoName>
-                    <p class="logo-name">{{ menu.label }}</p>
+    <div *ngIf="!isMobile" class="d-flex row text-center align-items-center w-100">
+        <ng-container *ngFor="let menu of menu;let i = index">
+            <div class="mat-list-item col-{{menu.propertyName==='logo' ?'5':'auto'}}" [class.desktop]="!isMobile"
+                (click)="goTo(menu.path, i)" [class.active]="selected===i">
+                <div *ngIf="menu.propertyName!=='logo' && menu.propertyName!=='contact' ;else anotherType">
+                    <p class="mb-0">{{ menu.label|uppercase }}</p>
+                </div>
+                <ng-template #anotherType>
+                    <ng-container *ngIf="menu.propertyName==='logo'; else contacts">
+                        <div class="logo-name" *ngFor="let item of splitter(menu.label)">
+                            {{ item|uppercase }}
+                        </div>
+                    </ng-container>
+                    <ng-template #contacts>
+                        <div class="btn-contact">
+                            {{ menu.label|uppercase }}
+                        </div>
+                    </ng-template>
                 </ng-template>
-            </mat-list-item>
-        </mat-list>
+            </div>
+        </ng-container>
     </div>
     <button class="position-relative w-auto h-auto end-0 p-0" mat-icon-button (click)="sidenav.toggle()"
         [fxShow]="isMobile">

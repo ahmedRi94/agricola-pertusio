@@ -1,10 +1,12 @@
-<mat-toolbar [class.sticky]="sticky">
-    <app-navbar (pathChange)="changePath($event)" [menu]="menu" [sidenav]="sidenav"></app-navbar>
+<mat-toolbar class="py-4" [class.sticky]="sticky">
+    <app-navbar [(selected)]="selected" (pathChange)="changePath($event)" [menu]="menu"
+        [sidenav]="sidenav"></app-navbar>
 </mat-toolbar>
 
 <mat-sidenav-container fxFlexFill>
     <mat-sidenav #sidenav class="text-center" [class.sticky-navbar]="sticky" (openedChange)="openVerticalMenu = $event">
-        <app-vertical-menu (pathChange)="changePath($event)" [menu]="menu" [sidenav]="sidenav"></app-vertical-menu>
+        <app-vertical-menu [(selected)]="selected" (pathChange)="changePath($event)" [menu]="menu"
+            [sidenav]="sidenav"></app-vertical-menu>
     </mat-sidenav>
 
     <mat-sidenav-content fxFlexFill>

@@ -1,18 +1,66 @@
-mat-list-item {
+@import "/src/styles/media-screen-variables";
+
+:host {
+    width: 100%;
+}
+
+mat-toolbar-row {
+    height: auto;
+
+    button {
+        --mat-mdc-button-persistent-ripple-color: transparent !important;
+        display: flex;
+        align-items: center;
+
+        mat-icon {
+            color: var(--tertiary);
+            font-size: 40px;
+            width: auto;
+            height: auto;
+            display: flex;
+            align-self: center;
+            justify-content: center;
+        }
+    }
+}
+
+
+.desktop {
+    font-size: var(--font-medium);
+    transition: 0.5s ease;
+
+    &:hover:not(.active) {
+        transform: scale(1.02);
+    }
+}
+
+.desktop.active p {
+    // transform: scale(0.2);
+    color: var(--white);
+    font-weight: 800;
+}
+
+.mat-list-item {
+    height: auto !important;
     cursor: pointer !important;
 
-    p {
+    p,
+    .btn-contact {
         color: var(--tertiary);
         font-size: var(--font-small);
     }
 
-    &.mat-mdc-list-item,
-    .mat-mdc-list-option {
-        width: auto !important;
-    }
-
     .logo-name {
+        color: var(--tertiary);
         font-family: 'the Seasons';
         font-size: var(--font-large);
+        line-height: 1;
+    }
+
+    .btn-contact {
+        border: 1px solid var(--tertiary);
+        padding: 10px 100px;
     }
 }
+
+@media (max-width: $mobile-small) {}

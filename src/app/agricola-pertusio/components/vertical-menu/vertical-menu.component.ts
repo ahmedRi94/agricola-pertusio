@@ -16,13 +16,31 @@ export class VerticalMenuComponent implements OnInit {
   @Output()
   pathChange = new EventEmitter<string>()
 
+  private _selected!: number;
+
+  @Input()
+  set selected( value: number ) {
+    this._selected = value
+    localStorage.setItem( 'selected', String( value ) )
+    this.selectedChange.emit( value )
+  }
+
+  get selected() {
+    return this._selected
+  }
+
+  @Output()
+  selectedChange = new EventEmitter<number>()
+
+
   constructor() {}
 
   ngOnInit(): void {
     this.isMobile = Platform.isMobile();
   }
 
-  goTo( path: string ) {
+  goTo( path: string, indexSelected: number ) {
+    this.selected = indexSelected
     this.sidenav.toggle()
     this.pathChange.emit( path )
   }
