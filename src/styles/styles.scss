@@ -1,0 +1,31 @@
+/*custom variables*/
+@import "variables";
+
+/*theming material*/
+@import "@angular/material/theming";
+
+/* Importing bootstrap */
+@import "bootstrap/scss/bootstrap";
+
+/* material theme */
+@import "./material_theme";
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', 'The Seasons';
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}

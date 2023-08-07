@@ -1,0 +1,17 @@
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+
+
+@include mat.core();
+
+$agricola-pertusio-primary: mat.define-palette(mat.$indigo-palette);
+$agricola-pertusio-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+$agricola-pertusio-warn: mat.define-palette(mat.$red-palette);
+
+$agricola-pertusio-theme: mat.define-light-theme((color: (primary: $agricola-pertusio-primary,
+                accent: $agricola-pertusio-accent,
+                warn: $agricola-pertusio-warn,
+            )));
+
+@include mat.all-component-themes($agricola-pertusio-theme);
