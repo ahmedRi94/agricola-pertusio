@@ -1,0 +1,18 @@
+<mat-toolbar-row>
+    <div [fxShow]="!isMobile">
+        <mat-list class="d-flex text-center">
+            <mat-list-item *ngFor="let menu of menu" [class.desktop]="!isMobile" (click)="goTo(menu.path)">
+                <ng-container *ngIf="menu.propertyName!=='logo';else logoName">
+                    <p class="mb-0">{{ menu.label }}</p>
+                </ng-container>
+                <ng-template #logoName>
+                    <p class="logo-name">{{ menu.label }}</p>
+                </ng-template>
+            </mat-list-item>
+        </mat-list>
+    </div>
+    <button class="position-relative w-auto h-auto end-0 p-0" mat-icon-button (click)="sidenav.toggle()"
+        [fxShow]="isMobile">
+        <mat-icon>{{ pathIcon }}</mat-icon>
+    </button>
+</mat-toolbar-row>
