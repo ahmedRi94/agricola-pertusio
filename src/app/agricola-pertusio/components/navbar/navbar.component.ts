@@ -38,12 +38,11 @@ export class NavbarComponent implements OnInit {
 
   constructor(
   ) {
-    this.sizeWindow = screen.width
   }
 
   ngOnInit(): void {
     this.isMobile = Platform.isMobile();
-    this.selected = this.selected === 4 ? 0 : this.selected
+    this.sizeWindow = window.innerWidth
   }
 
   goTo( path: string, indexSelected: number ) {

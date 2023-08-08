@@ -25,17 +25,16 @@ mat-toolbar-row {
 }
 
 
-.desktop {
-    font-size: var(--font-medium);
-    transition: 0.5s ease;
+// .desktop {
+//     font-size: var(--font-medium);
+//     transition: 0.5s ease;
 
-    &:hover:not(.active) {
-        transform: scale(1.02);
-    }
-}
+//     &:hover:not(.active) {
+//         transform: scale(1.02);
+//     }
+// }
 
 .desktop.active p {
-    // transform: scale(0.2);
     color: var(--white);
     font-weight: 800;
 }

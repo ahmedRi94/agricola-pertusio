@@ -2,6 +2,8 @@
 <ng-container *ngFor="let menu of menu;let i = index">
   <mat-list-item *ngIf="menu.propertyName!=='logo'" [class.active]="selected===i" [class.mobile]="isMobile"
     (click)="goTo(menu.path, i)">
-    <p>{{ menu.label }}</p>
+    <div class="mb-4 menu">
+      <div *ngFor="let item of menu.label">{{ item|uppercase }}</div>
+    </div>
   </mat-list-item>
 </ng-container>

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { MenuNavbarModel } from './agricola-pertusio/components/navbar/menu-navbar.interface';
 import { Router } from '@angular/router';
+import { Platform } from './agricola-pertusio/utils/platform.class';
 
 @Component( {
   selector: 'app-root',
@@ -47,12 +48,11 @@ export class AppComponent {
   constructor(
     private readonly router: Router
   ) {
-    console.log( Number( localStorage.getItem( 'selected' ) ) );
-
-    this.selected = localStorage.getItem( 'selected' ) && Number( localStorage.getItem( 'selected' ) ) !== 4 ? Number( localStorage.getItem( 'selected' ) ) : 0
+    this.selected = localStorage.getItem( 'selected' ) && Number( localStorage.getItem( 'selected' ) ) === 4 && !Platform.isMobile() ? 0 : Number( localStorage.getItem( 'selected' ) )
   }
 
   changePath( path: string ) {
     this.router.navigateByUrl( path )
+    this.selected === 4 && !Platform.isMobile() ? location.reload() : null
   }
 }

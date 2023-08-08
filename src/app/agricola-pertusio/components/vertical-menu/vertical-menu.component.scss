@@ -5,26 +5,30 @@
   transition: 0.5s ease;
   min-height: 0;
 
-  &.active p {
+  &.active div {
     transform: scale(1.1);
     color: var(--red-mixed);
   }
 }
 
-.mobile p {
+.menu {
+  line-height: 1;
+}
+
+.mobile div {
   border: none;
   transition: transform 250ms ease-in-out;
   margin: 10px;
 }
 
-.mobile.active p::after {
-  display: block;
-  content: "";
-  position: relative;
-  bottom: -5px;
-  border-bottom: solid 3px var(--red-mixed);
-  transition: transform 250ms ease-in-out;
-}
+// .mobile.active p::after {
+//   display: block;
+//   content: "";
+//   position: relative;
+//   bottom: -5px;
+//   border-bottom: solid 3px var(--red-mixed);
+//   transition: transform 250ms ease-in-out;
+// }
 
 //icon close
 .mat-icon {

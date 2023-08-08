@@ -4,7 +4,8 @@
 </mat-toolbar>
 
 <mat-sidenav-container fxFlexFill>
-    <mat-sidenav #sidenav class="text-center" [class.sticky-navbar]="sticky" (openedChange)="openVerticalMenu = $event">
+    <mat-sidenav #sidenav class="text-center w-50 py-5" [class.sticky-navbar]="sticky"
+        (openedChange)="openVerticalMenu = $event">
         <app-vertical-menu [(selected)]="selected" (pathChange)="changePath($event)" [menu]="menu"
             [sidenav]="sidenav"></app-vertical-menu>
     </mat-sidenav>
