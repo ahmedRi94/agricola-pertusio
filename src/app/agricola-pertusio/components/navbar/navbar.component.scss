@@ -24,19 +24,17 @@ mat-toolbar-row {
     }
 }
 
+.desktop.active {
+    & p {
+        color: var(--white);
+        font-weight: 800;
+    }
 
-// .desktop {
-//     font-size: var(--font-medium);
-//     transition: 0.5s ease;
-
-//     &:hover:not(.active) {
-//         transform: scale(1.02);
-//     }
-// }
-
-.desktop.active p {
-    color: var(--white);
-    font-weight: 800;
+    & .btn-contact {
+        background: var(--tertiary);
+        color: var(--primary);
+        border: 1px solid var(--primary);
+    }
 }
 
 .mat-list-item {
