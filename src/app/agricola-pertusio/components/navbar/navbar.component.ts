@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, HostListener, Input, OnInit, Output } from '@angular/core';
 import { Platform } from '../../utils/platform.class';
 import { MatSidenav } from '@angular/material/sidenav';
 import { MenuNavbarModel } from './menu-navbar.interface';
@@ -37,12 +37,13 @@ export class NavbarComponent implements OnInit {
   selectedChange = new EventEmitter<number>()
 
   constructor(
-  ) {}
+  ) {
+    this.sizeWindow = screen.width
+  }
 
   ngOnInit(): void {
     this.isMobile = Platform.isMobile();
-    console.log( this.isMobile );
-
+    this.selected = this.selected === 4 ? 0 : this.selected
   }
 
   goTo( path: string, indexSelected: number ) {
@@ -52,5 +53,28 @@ export class NavbarComponent implements OnInit {
 
   splitter( name: string ) {
     return name.split( ' ' )
+  }
+
+  getColRow( propertyName: string | undefined ) {
+    switch ( propertyName ) {
+      case 'logo': {
+        if ( this.sizeWindow > 1528 )
+          return '6'
+        else if ( this.sizeWindow > 1400 )
+          return '5'
+        else if ( this.sizeWindow > 966 )
+          return '4'
+        return '3'
+      }
+      default:
+        return 'auto'
+    }
+  }
+
+  private sizeWindow!: number;
+
+  @HostListener( 'window:resize', ['$event'] )
+  onResize( event: any ) {
+    this.sizeWindow = event.target.innerWidth
   }
 }

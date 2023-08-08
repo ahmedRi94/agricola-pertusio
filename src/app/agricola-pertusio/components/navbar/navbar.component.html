@@ -1,20 +1,22 @@
 <mat-toolbar-row>
     <div *ngIf="!isMobile" class="d-flex row text-center align-items-center w-100">
         <ng-container *ngFor="let menu of menu;let i = index">
-            <div class="mat-list-item col-{{menu.propertyName==='logo' ?'5':'auto'}}" [class.desktop]="!isMobile"
+            <div class="mat-list-item col-{{getColRow(menu.propertyName)}}" [class.desktop]="!isMobile"
                 (click)="goTo(menu.path, i)" [class.active]="selected===i">
                 <div *ngIf="menu.propertyName!=='logo' && menu.propertyName!=='contact' ;else anotherType">
-                    <p class="mb-0">{{ menu.label|uppercase }}</p>
+                    <div *ngFor="let item of menu.label">
+                        <p class="mb-0">{{ item|uppercase }}</p>
+                    </div>
                 </div>
                 <ng-template #anotherType>
                     <ng-container *ngIf="menu.propertyName==='logo'; else contacts">
-                        <div class="logo-name" *ngFor="let item of splitter(menu.label)">
+                        <div class="logo-name" *ngFor="let item of menu.label">
                             {{ item|uppercase }}
                         </div>
                     </ng-container>
                     <ng-template #contacts>
                         <div class="btn-contact">
-                            {{ menu.label|uppercase }}
+                            <span *ngFor="let item of menu.label">{{ item|uppercase }}</span>
                         </div>
                     </ng-template>
                 </ng-template>

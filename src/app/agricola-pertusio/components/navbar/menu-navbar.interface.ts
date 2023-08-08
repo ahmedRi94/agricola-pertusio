@@ -1,5 +1,5 @@
 export interface MenuNavbarModel {
-  label: string;
+  label: string[];
   path: string;
   propertyName?: string;
 }

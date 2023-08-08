@@ -15,28 +15,28 @@ export class AppComponent {
   menu: MenuNavbarModel[] = [
     {
       path: "/home-page",
-      label: "Home"
+      label: ["Home"]
     },
     {
       path: "/goat-experience",
-      label: "Goat experience"
+      label: ["Goat", "experience"]
     },
     {
       path: "/latte-e-formaggi",
-      label: "Latte e formaggi"
+      label: ["Latte e", "formaggi"]
     },
     {
       path: "/gallery",
-      label: "Gallery"
+      label: ["Gallery"]
     },
     {
       path: "/home-page",
-      label: "Agricola pertusio",
+      label: ["Agricola", "pertusio"],
       propertyName: "logo"
     },
     {
       path: "/contacts",
-      label: "Contact",
+      label: ["Contact"],
       propertyName: "contact"
     }
   ]

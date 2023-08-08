@@ -63,4 +63,21 @@ mat-toolbar-row {
     }
 }
 
-@media (max-width: $mobile-small) {}
+@media (max-width: $laptop) {
+    .mat-list-item {
+
+        p,
+        .btn-contact {
+            font-size: var(--font-extra-small);
+        }
+
+        .logo-name {
+            font-size: var(--font-normal);
+            line-height: 1;
+        }
+
+        .btn-contact {
+            padding: 10px 80px;
+        }
+    }
+}

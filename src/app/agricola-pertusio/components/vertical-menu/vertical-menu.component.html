@@ -1,5 +1,7 @@
 <mat-icon (click)="sidenav.toggle()">close</mat-icon>
-<mat-list-item [class.active]="selected===i" [class.mobile]="isMobile" *ngFor="let menu of menu;let i = index"
-  (click)="goTo(menu.path, i)">
-  <p>{{ menu.label }}</p>
-</mat-list-item>
+<ng-container *ngFor="let menu of menu;let i = index">
+  <mat-list-item *ngIf="menu.propertyName!=='logo'" [class.active]="selected===i" [class.mobile]="isMobile"
+    (click)="goTo(menu.path, i)">
+    <p>{{ menu.label }}</p>
+  </mat-list-item>
+</ng-container>
