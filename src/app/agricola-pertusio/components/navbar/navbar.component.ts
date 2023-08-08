@@ -25,7 +25,7 @@ export class NavbarComponent implements OnInit {
   @Input()
   set selected( value: number ) {
     this._selected = value
-    localStorage.setItem( 'selected', String( value ) )
+    sessionStorage.setItem( 'selected', String( value ) )
     this.selectedChange.emit( value )
   }
 

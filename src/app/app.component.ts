@@ -48,7 +48,7 @@ export class AppComponent {
   constructor(
     private readonly router: Router
   ) {
-    this.selected = localStorage.getItem( 'selected' ) && Number( localStorage.getItem( 'selected' ) ) === 4 && !Platform.isMobile() ? 0 : Number( localStorage.getItem( 'selected' ) )
+    this.selected = sessionStorage.getItem( 'selected' ) && Number( sessionStorage.getItem( 'selected' ) ) === 4 && !Platform.isMobile() ? 0 : Number( sessionStorage.getItem( 'selected' ) )
   }
 
   changePath( path: string ) {

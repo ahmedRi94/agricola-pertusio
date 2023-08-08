@@ -1,8 +1,8 @@
 <mat-icon (click)="sidenav.toggle()">close</mat-icon>
 <ng-container *ngFor="let menu of menu;let i = index">
-  <mat-list-item *ngIf="menu.propertyName!=='logo'" [class.active]="selected===i" [class.mobile]="isMobile"
-    (click)="goTo(menu.path, i)">
-    <div class="mb-4 menu">
+  <mat-list-item class="d-flex justify-content-center mb-4" *ngIf="menu.propertyName!=='logo'"
+    [class.active]="selected===i" [class.mobile]="isMobile" (click)="goTo(menu.path, i)">
+    <div class="menu">
       <div *ngFor="let item of menu.label">{{ item|uppercase }}</div>
     </div>
   </mat-list-item>

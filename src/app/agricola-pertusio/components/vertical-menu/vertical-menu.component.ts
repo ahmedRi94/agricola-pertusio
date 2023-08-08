@@ -21,7 +21,7 @@ export class VerticalMenuComponent implements OnInit {
   @Input()
   set selected( value: number ) {
     this._selected = value
-    localStorage.setItem( 'selected', String( this.selected ) )
+    sessionStorage.setItem( 'selected', String( this.selected ) )
     this.selectedChange.emit( this.selected )
   }
 
