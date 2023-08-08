@@ -1,0 +1,40 @@
+.title {
+    font-size: var(--font-extra-large);
+    font-family: "the Seasons";
+    margin-bottom: 100px;
+    margin-top: 30px;
+}
+
+p {
+    font-size: var(--font-normal);
+}
+
+.subtitle {
+    font-size: var(--font-subtitle);
+    font-family: "the Seasons";
+}
+
+.title-card {
+    font-size: var(--font-title-card);
+    color: var(--secondary);
+    font-family: "the Seasons";
+}
+
+.card {
+    background: var(--secondary);
+    color: var(--tertiary);
+    padding-bottom: 20px;
+    margin-bottom: 100px;
+
+    div {
+        font-size: var(--font-large);
+        font-family: "the Seasons";
+        line-height: 1;
+    }
+
+    span {
+        margin: 5%;
+        text-align: justify;
+    }
+
+}

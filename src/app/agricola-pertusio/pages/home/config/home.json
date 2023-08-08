@@ -1,0 +1,51 @@
+{
+    "title": "PRESENTAZIONE",
+    "first_container": [
+        {
+            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+        },
+        {
+            "title": "",
+            "img": "../../../../assets/images/img1.jpg",
+            "alt": "Nostre immagini"
+        },
+        {
+            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+        }
+    ],
+    "second_container": [
+        [
+            {
+                "title": "About Us",
+                "subtitle": " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum."
+            },
+            {
+                "title": "Your Description Here",
+                "subtitle": " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum."
+            }
+        ],
+        [
+            {
+                "img": "../../../../assets/images/img2.jpg",
+                "alt": "Nostre immagini"
+            }
+        ]
+    ],
+    "third_container": {
+        "title": "VALUE",
+        "card": [
+            {
+                "title": "Your Catchy Headline Here",
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            },
+            {
+                "title": "Your Catchy Headline Here",
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            },
+            {
+                "title": "Your Catchy Headline Here",
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            }
+        ]
+    }
+}

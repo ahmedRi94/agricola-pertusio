@@ -1,0 +1,46 @@
+<ng-container *ngIf="content as c">
+    <h1 class="title text-center">{{c.title}}</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col" *ngFor="let item of c.first_container">
+                <p>
+                    <span *ngIf="!item.img; else img">{{item.title}}</span>
+                    <ng-template #img>
+                        <img [src]="item.img" [alt]="item.alt">
+                    </ng-template>
+                </p>
+            </div>
+        </div>
+
+        <div class="row my-5">
+            <div class="col{{first?'-8':null}}" *ngFor="let item of c.second_container; let first = first">
+                <ng-container *ngIf="first; else img">
+                    <ng-container *ngFor="let col of item; let f = first">
+                        <div class="short-div">
+                            <div class="subtitle text-center">
+                                {{col.title|uppercase}}
+                            </div>
+                            <div>
+                                {{col.subtitle}}
+                            </div>
+                        </div>
+                        <hr class="my-5" *ngIf="f">
+                    </ng-container>
+                </ng-container>
+                <ng-template #img>
+                    <img [src]="item[0].img" [alt]="item[0].alt">
+                </ng-template>
+            </div>
+        </div>
+
+        <div class="row text-center" *ngIf="c.third_container as contain">
+            <div class="title-card">
+                {{contain.title|uppercase}}
+            </div>
+            <div class="col card" *ngFor="let item of contain.card; let last= last" [class.me-5]="!last">
+                <div class="my-3">{{item.title|uppercase}}</div>
+                <span class="">{{item.desc}}</span>
+            </div>
+        </div>
+    </div>
+</ng-container>

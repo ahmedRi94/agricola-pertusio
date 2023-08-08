@@ -1,5 +1,8 @@
 mat-toolbar {
     background-color: var(--primary);
     height: auto;
-    // justify-content: space-around;
+}
+
+mat-sidenav-content {
+    overflow: hidden;
 }

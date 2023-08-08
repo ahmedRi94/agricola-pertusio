@@ -1,5 +1,6 @@
 /*custom variables*/
 @import "variables";
+@import "./font";
 
 /*theming material*/
 @import "@angular/material/theming";
@@ -11,7 +12,6 @@
 @import "./material_theme";
 
 html,
-body,
 mat-sidenav-content {
   height: 100%;
 }
@@ -20,7 +20,7 @@ body,
 mat-sidenav-content {
   background-color: var(--tertiary);
   margin: 0;
-  font-family: 'Montserrat', 'The Seasons';
+  font-family: 'Montserrat', 'The Seasons', sans-serif;
 }
 
 *,
@@ -31,4 +31,9 @@ mat-sidenav-content {
 
 *:focus {
   outline: none;
+}
+
+hr {
+  color: var(--hr-color);
+  height: 2px;
 }
