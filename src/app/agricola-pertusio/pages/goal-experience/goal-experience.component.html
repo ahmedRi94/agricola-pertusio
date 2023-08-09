@@ -1,1 +1,17 @@
-<p>goal-experience works!</p>
+<div class="container">
+    <div class="photos justify-content-between">
+        <div class="row-img justify-content-end">
+            <div class="column" *ngFor="let item of content.img">
+                <img class="" *ngFor="let img of item" [src]="img.path" style="width:100%">
+            </div>
+        </div>
+        <br>
+        <div class="description ms-5">
+            <div *ngFor="let item of content.data">
+                <div class="{{item.propertyName}}" *ngFor="let title of item.title">
+                    {{title}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
