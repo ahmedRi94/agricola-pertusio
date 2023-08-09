@@ -4,20 +4,25 @@ import { AgricolaPertusioRoutingModule } from './agricola-pertusio-routing.modul
 import { UiComponentsModule } from './components/ui-components.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { HomeModule } from './pages/home/home.module';
+import { GoalExperienceModule } from './pages/goal-experience/goal-experience.module';
 
 @NgModule( {
-  declarations: [
-  ],
+  declarations: [],
   imports: [
     UiComponentsModule,
     CommonModule,
     BrowserModule,
     AgricolaPertusioRoutingModule,
-    HomeModule
+    AgricolaPertusioModule.customModule
   ],
   exports: [
-    HomeModule,
+    AgricolaPertusioModule.customModule,
     UiComponentsModule
   ]
 } )
-export class AgricolaPertusioModule {}
+export class AgricolaPertusioModule {
+  static customModule = [
+    GoalExperienceModule,
+    HomeModule
+  ]
+}

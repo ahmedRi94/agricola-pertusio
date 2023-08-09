@@ -49,6 +49,7 @@ export class AppComponent {
     private readonly router: Router
   ) {
     this.selected = sessionStorage.getItem( 'selected' ) && Number( sessionStorage.getItem( 'selected' ) ) === 4 && !Platform.isMobile() ? 0 : Number( sessionStorage.getItem( 'selected' ) )
+    this.router.navigateByUrl( this.menu[this.selected].path )
   }
 
   changePath( path: string ) {
