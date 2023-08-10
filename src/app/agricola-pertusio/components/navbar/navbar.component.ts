@@ -57,7 +57,7 @@ export class NavbarComponent implements OnInit {
   getColRow( propertyName: string | undefined ) {
     switch ( propertyName ) {
       case 'logo': {
-        if ( this.sizeWindow > 1528 )
+        if ( this.sizeWindow > 1553 )
           return '6'
         else if ( this.sizeWindow > 1400 )
           return '5'
