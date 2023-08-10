@@ -1,0 +1,30 @@
+@import "/src/styles/media-screen-variables";
+
+:host {
+    --max-width-column-mosaic-photo: 13%;
+    --flex-column-mosaic-photo: 20%;
+
+    @media(max-width: $big-desktop) {
+        --max-width-column-mosaic-photo: 11%;
+        --flex-column-mosaic-photo: 10%;
+    }
+
+    @media(max-width: $laptop) {
+        --max-width-column-mosaic-photo: 20%;
+        --flex-column-mosaic-photo: 20%;
+    }
+
+    @media(max-width: $desktop) {
+        --max-width-column-mosaic-photo: 15%;
+        --flex-column-mosaic-photo: 15%;
+    }
+
+    @media(max-width: $mini-tablet) {
+        --max-width-column-mosaic-photo: 50%;
+        --flex-column-mosaic-photo: 50%;
+    }
+}
+
+img {
+    object-fit: cover;
+}

@@ -1,0 +1,70 @@
+@import "media-screen-variables";
+
+.container {
+    margin-top: 80px;
+}
+
+.description {
+    width: 75%;
+}
+
+.photos {
+    display: flex;
+}
+
+.row-img {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    -ms-flex: var(--flex-column-mosaic-photo);
+    flex: var(--flex-column-mosaic-photo);
+    max-width: var(--max-width-column-mosaic-photo);
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.title {
+    font-size: var(--font-title-card);
+    line-height: 1;
+    text-align: center;
+    font-family: "the Seasons";
+
+    &:not(:first-child) {
+        margin-bottom: 120px;
+    }
+}
+
+@media (max-width: $mini-tablet) {
+    .column {
+        -ms-flex: var(--flex-column-mosaic-photo);
+        flex: var(--flex-column-mosaic-photo);
+        max-width: var(--max-width-column-mosaic-photo);
+    }
+
+    .photos {
+        display: block;
+    }
+
+    .title {
+        font-size: var(--font-large);
+
+        &:not(:first-child) {
+            margin-bottom: 40px;
+        }
+    }
+
+    .container {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}

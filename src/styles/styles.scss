@@ -11,6 +11,9 @@
 /* material theme */
 @import "./material_theme";
 
+/*custom scss*/
+@import "common";
+
 html,
 mat-sidenav-content {
   height: 100%;

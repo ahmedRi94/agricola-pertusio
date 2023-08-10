@@ -5,8 +5,7 @@
                 <img class="" *ngFor="let img of item" [src]="img.path" style="width:100%">
             </div>
         </div>
-        <br>
-        <div class="description ms-5">
+        <div class="description" [class]="sizeWindow>992?'ms-5':'m-auto'">
             <div *ngFor="let item of content.data">
                 <div class="{{item.propertyName}}" *ngFor="let title of item.title">
                     {{title}}

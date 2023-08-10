@@ -1,0 +1,50 @@
+{
+    "img": [
+        [
+            {
+                "path": "../../../assets/images/lat-form1.jpg",
+                "propertyName": "vertical"
+            },
+            {
+                "path": "../../../assets/images/exp4.jpg",
+                "propertyName": "horizontal"
+            }
+        ],
+        [
+            {
+                "path": "../../../assets/images/lat-form2.jpg",
+                "propertyName": "horizontal"
+            },
+            {
+                "path": "../../../assets/images/lat-form8.jpg",
+                "propertyName": "vertical"
+            }
+        ],
+        [
+            {
+                "path": "../../../assets/images/lat-form3.jpg",
+                "propertyName": "vertical"
+            },
+            {
+                "path": "../../../assets/images/lat-form4.jpg",
+                "propertyName": "horizontal"
+            }
+        ],
+        [
+            {
+                "path": "../../../assets/images/lat-form7.jpg",
+                "propertyName": "last"
+            }
+        ],
+        [
+            {
+                "path": "../../../assets/images/lat-form5.jpg",
+                "propertyName": "last"
+            },
+            {
+                "path": "../../../assets/images/lat-form6.jpg",
+                "propertyName": "last"
+            }
+        ]
+    ]
+}

@@ -5,9 +5,9 @@ import { UiComponentsModule } from './components/ui-components.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { HomeModule } from './pages/home/home.module';
 import { GoalExperienceModule } from './pages/goal-experience/goal-experience.module';
+import { LatteFormaggiModule } from './pages/latte-formaggi/latte-formaggi.module';
 
 @NgModule( {
-  declarations: [],
   imports: [
     UiComponentsModule,
     CommonModule,
@@ -22,6 +22,7 @@ import { GoalExperienceModule } from './pages/goal-experience/goal-experience.mo
 } )
 export class AgricolaPertusioModule {
   static customModule = [
+    LatteFormaggiModule,
     GoalExperienceModule,
     HomeModule
   ]
