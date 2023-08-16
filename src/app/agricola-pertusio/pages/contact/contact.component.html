@@ -6,7 +6,9 @@
             </div>
         </div>
         <div class="col align-self-center text-center">
-            <div class="d-flex justify-content-evenly" *ngFor="let item of c.info">
+            <div class="d-flex justify-content-evenly align-items-center" *ngFor="let item of c.info"
+                [class.cursor-pointer]="item.icon==='phone' || item.icon==='mail'"
+                (click)="goTo(item.icon, item.label)">
                 <div class="icon text-start w-50">
                     <mat-icon>{{item.icon}}</mat-icon>
                 </div>

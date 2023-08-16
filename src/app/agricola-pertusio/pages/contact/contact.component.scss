@@ -1,3 +1,5 @@
+@import "/src/styles/media-screen-variables";
+
 mat-icon,
 .desc {
     color: var(--secondary);
@@ -27,4 +29,49 @@ mat-icon,
         height: 100%;
         object-fit: cover;
     }
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+@media(max-width:$laptop) {
+
+    .img {
+        width: 350px;
+    }
+
+    .desc {
+        font-size: var(--font-small);
+    }
+
+    .icon mat-icon {
+        font-size: calc(var(--font-small)*2);
+    }
+
+    .title {
+        font-size: var(--font-large);
+    }
+
+    .subtitle {
+        font-size: calc(var(--font-small) - 3px);
+    }
+}
+
+
+@media(max-width:$mobile-small) {
+
+    .img {
+        width: 250px;
+        margin-bottom: 50px;
+    }
+
+    .desc {
+        width: 65% !important;
+    }
+
+    .icon mat-icon {
+        width: 35% !important;
+    }
+
 }

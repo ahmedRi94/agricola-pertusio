@@ -12,4 +12,8 @@ export class ContactComponent {
   constructor() {
     this.content = jsonConfig;
   }
+
+  goTo( iconName: string, label: string ) {
+    iconName === 'phone' ? window.location.href = `tel:+39${label}` : iconName === 'mail' ? window.location.href = `mailto:${label}` : null
+  }
 }
