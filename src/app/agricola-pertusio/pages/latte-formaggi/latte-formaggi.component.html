@@ -1,14 +1,20 @@
 <div class="container-fluid p-5 m-auto position-relative">
     <div class="photos d-block justify-content-between">
-        <div class="row-img justify-content-start w-100 ">
-            <div class="column" [ngClass]="{'d-grid':i<4, 'h-100':i>=3}" *ngFor="let item of content.img;let i = index">
-                <div [class.d-flex]="img.propertyName!=='last'" *ngFor="let img of item">
-                    <img class="w-100" [src]="img.path">
+        <div class="row-img justify-content-center w-100">
+            <div class="column" [ngClass]="{ 'h-100':i>=3}" *ngFor="let item of content.img;let i = index">
+                <div style="height:{{img.height}}%;" [class.d-flex]="img.propertyName!=='last'"
+                    *ngFor="let img of item">
+                    <img *ngIf="img.path" class="w-100" [src]="img.path">
+                    <div class="mt-5 paragraph" *ngIf="img.propertyName ==='desc'">
+                        <div class="title" *ngFor="let tit of img.title">
+                            {{tit}}
+                        </div>
+                        <div class="desc" *ngIf="img.propertyName==='desc'">
+                            {{img.description}}
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- <div class="position-absolute">
-        ssssssssssssssss
-    </div> -->
 </div>

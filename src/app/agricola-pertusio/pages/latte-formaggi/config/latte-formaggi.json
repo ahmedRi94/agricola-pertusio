@@ -3,47 +3,65 @@
         [
             {
                 "path": "../../../assets/images/lat-form1.jpg",
-                "propertyName": "vertical"
+                "propertyName": "vertical",
+                "height": "60"
             },
             {
                 "path": "../../../assets/images/exp4.jpg",
-                "propertyName": "horizontal"
+                "propertyName": "horizontal",
+                "height": "40"
             }
         ],
         [
             {
                 "path": "../../../assets/images/lat-form2.jpg",
-                "propertyName": "horizontal"
+                "propertyName": "horizontal",
+                "height": "75"
             },
             {
                 "path": "../../../assets/images/lat-form8.jpg",
-                "propertyName": "vertical"
+                "propertyName": "vertical",
+                "height": "25"
             }
         ],
         [
             {
                 "path": "../../../assets/images/lat-form3.jpg",
-                "propertyName": "vertical"
+                "propertyName": "vertical",
+                "height": "40"
             },
             {
                 "path": "../../../assets/images/lat-form4.jpg",
-                "propertyName": "horizontal"
+                "propertyName": "horizontal",
+                "height": "60"
             }
         ],
         [
             {
                 "path": "../../../assets/images/lat-form7.jpg",
-                "propertyName": "last"
+                "propertyName": "last",
+                "height": "30"
+            },
+            {
+                "title": [
+                    "Latte e ",
+                    "Formaggi"
+                ],
+                "propertyName": "desc",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "height": "70"
             }
         ],
         [
             {
                 "path": "../../../assets/images/lat-form5.jpg",
-                "propertyName": "last"
+                "propertyName": "last",
+                "height": "15"
             },
             {
                 "path": "../../../assets/images/lat-form6.jpg",
-                "propertyName": "last"
+                "propertyName": "last",
+                "height": "15"
             }
         ]
     ]

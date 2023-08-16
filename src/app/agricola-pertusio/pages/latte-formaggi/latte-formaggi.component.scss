@@ -1,7 +1,7 @@
 @import "/src/styles/media-screen-variables";
 
 :host {
-    --max-width-column-mosaic-photo: 13%;
+    --max-width-column-mosaic-photo: 15%;
     --flex-column-mosaic-photo: 20%;
 
     @media(max-width: $big-desktop) {
@@ -27,4 +27,22 @@
 
 img {
     object-fit: cover;
+}
+
+.paragraph {
+    margin-left: 10px;
+}
+
+@media(max-width:$mobile-small) {
+    .paragraph {
+        margin-left: 0;
+
+        .title {
+            font-size: calc(var(--font-large)/2 + 5px);
+        }
+
+        .desc {
+            font-size: var(--font-small);
+        }
+    }
 }
