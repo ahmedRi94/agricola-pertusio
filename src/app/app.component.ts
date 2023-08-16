@@ -36,7 +36,7 @@ export class AppComponent {
       propertyName: "logo"
     },
     {
-      path: "/contacts",
+      path: "/contact",
       label: ["Contact"],
       propertyName: "contact"
     }

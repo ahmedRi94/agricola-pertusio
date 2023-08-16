@@ -1,0 +1,23 @@
+{
+    "title": "Contacts Us",
+    "subtitle": "@REALLYGREATSITE",
+    "img": "../../../../assets//images/contact.jpg",
+    "info": [
+        {
+            "icon": "phone",
+            "label": "123-456-7890"
+        },
+        {
+            "icon": "mail",
+            "label": "hello@reallygreatsite.com"
+        },
+        {
+            "icon": "language",
+            "label": "WWW.reallygreatsite.COM"
+        },
+        {
+            "icon": "place",
+            "label": "123 anywhere st., any city"
+        }
+    ]
+}

@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { GoalExperienceComponent } from './pages/goal-experience/goal-experience.component';
 import { LatteFormaggiComponent } from './pages/latte-formaggi/latte-formaggi.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'latte-e-formaggi',
     component: LatteFormaggiComponent
+  },
+  {
+    path: 'contact',
+    component: ContactComponent
   }
 ];
 
