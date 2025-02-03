@@ -63,12 +63,15 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "buildTarget": "agricola-pertusio:build"
+          },
           "configurations": {
             "production": {
-              "browserTarget": "agricola-pertusio:build:production"
+              "buildTarget": "agricola-pertusio:build:production"
             },
             "development": {
-              "browserTarget": "agricola-pertusio:build:development"
+              "buildTarget": "agricola-pertusio:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +79,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "agricola-pertusio:build"
+            "buildTarget": "agricola-pertusio:build"
           }
         },
         "test": {

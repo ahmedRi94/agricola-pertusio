@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import jsonConfig from "./config/contact.json";
 
 @Component( {
-  selector: 'app-contact',
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
+    selector: 'app-contact',
+    templateUrl: './contact.component.html',
+    styleUrls: ['./contact.component.scss'],
+    standalone: false
 } )
 export class ContactComponent {
   content: any;

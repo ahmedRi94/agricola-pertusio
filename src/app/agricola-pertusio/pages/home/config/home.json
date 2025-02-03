@@ -1,8 +1,8 @@
 {
-    "title": "PRESENTAZIONE",
+    "title": "LA NOSTRA AZIENDA",
     "first_container": [
         {
-            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+            "title": "Una piccola realtà nel cuore del Roero.\nAlleviamo capre allo stato semibrado per produrre formaggi di alta qualità."
         },
         {
             "title": "",
@@ -10,18 +10,14 @@
             "alt": "Nostre immagini"
         },
         {
-            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+            "title": "Seguiamo un ciclo naturale sia per i nostri animali che per i mostri prodotti, a dimostrazione che un agricoltura poco impattante può esistere."
         }
     ],
     "second_container": [
         [
             {
-                "title": "About Us",
-                "subtitle": " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum."
-            },
-            {
-                "title": "Your Description Here",
-                "subtitle": " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum."
+                "title": "Presidio SlowFood",
+                "subtitle": "Prati stabili e pascoli sono l'emblema del perfetto equilibrio tra natura ed esseri umani, tra rispetto dell'ambiente e produzione di reditto, tra mondo selvatico e saperi millenari. Una parte importante della cultura, dell'identità e dei paesaggi delle comunità."
             }
         ],
         [
@@ -32,19 +28,19 @@
         ]
     ],
     "third_container": {
-        "title": "VALUE",
+        "title": "I NOSTRI VALORI",
         "card": [
             {
-                "title": "Your Catchy Headline Here",
-                "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                "title": "Qualità",
+                "desc": "L'alimentazione naturale delle nostre capre, composta da pascolo di prati, arbusti di sottobosco e fieno, determina un alta qualità del nostro latte e del nostro formaggio, direttamente legato all'immensa biodiversità roerina."
             },
             {
-                "title": "Your Catchy Headline Here",
-                "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                "title": "Benessere animale",
+                "desc": "La serenità dei nostri animali è la parola d'ordine nel nostro allevamento. Le nostre capre hanno la possibilità di pascolare quasi 365 giorni all'anno, non vengono decornate e la riproduzione avviene in maniera completamente naturale. Un paio di mesi prima del parto interrompiamo la mungitura in modo che le madri possano dedicarsi appieno alla gestazione. I nascituri vengono svezzati in maniera naturale e trascorrono almeno un mese con le madri."
             },
             {
-                "title": "Your Catchy Headline Here",
-                "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                "title": "Sempre più vicini",
+                "desc": "Oltre a effettuare spedizioni, potete trovare i nostri prodotti ai mercati rionali di Bra, Montà d’Alba e Monteu Roero. Se avete piacere di venir a fare un saluto ai nostri animali, su prenotazione si effettuano visite in  azienda ."
             }
         ]
     }

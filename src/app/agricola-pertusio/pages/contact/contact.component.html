@@ -6,7 +6,7 @@
             </div>
         </div>
         <div class="col align-self-center text-center">
-            <div class="d-flex justify-content-evenly align-items-center" *ngFor="let item of c.info"
+            <div class="d-flex justify-content-between align-items-center" *ngFor="let item of c.info"
                 [class.cursor-pointer]="item.icon==='phone' || item.icon==='mail'"
                 (click)="goTo(item.icon, item.label)">
                 <div class="icon text-start w-50">
@@ -17,8 +17,8 @@
                 </div>
             </div>
             <div class="mt-5">
-                <div class="title">{{c.title}}</div>
-                <div class="subtitle">{{c.subtitle}}</div>
+                <div class="subtitle" [innerHTML]="c.subtitle"></div>
+                <div class="title mt-5" [innerHTML]="c.title"></div>
             </div>
         </div>
     </div>

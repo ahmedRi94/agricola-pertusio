@@ -4,9 +4,10 @@ import { MenuNavbarModel } from '../navbar/menu-navbar.interface';
 import { Platform } from '../../utils/platform.class';
 
 @Component( {
-  selector: 'app-vertical-menu',
-  templateUrl: './vertical-menu.component.html',
-  styleUrls: ['./vertical-menu.component.scss']
+    selector: 'app-vertical-menu',
+    templateUrl: './vertical-menu.component.html',
+    styleUrls: ['./vertical-menu.component.scss'],
+    standalone: false
 } )
 export class VerticalMenuComponent implements OnInit {
   @Input() menu!: MenuNavbarModel[];

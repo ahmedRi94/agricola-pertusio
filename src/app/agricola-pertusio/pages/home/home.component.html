@@ -13,9 +13,12 @@
             </div>
         </div>
 
+        <hr class="my-5">
+
         <div class="row my-5">
             <div [ngClass]="{'p-0':sizeWindow<400 && !first, 'text-center':sizeWindow<400 && !first}"
-                class="col{{getCorrectlyCol(first)}}" *ngFor="let item of c.second_container; let first = first">
+                class="col{{getCorrectlyCol(first)}} d-flex align-self-center"
+                *ngFor="let item of c.second_container; let first = first">
                 <ng-container *ngIf="first; else img">
                     <ng-container *ngFor="let col of item; let f = first">
                         <div class="short-div">
@@ -26,7 +29,7 @@
                                 {{col.subtitle}}
                             </div>
                         </div>
-                        <hr class="my-5" *ngIf="f">
+                        <!-- <hr class="my-5" *ngIf="f"> -->
                     </ng-container>
                 </ng-container>
                 <ng-template #img>
@@ -34,6 +37,8 @@
                 </ng-template>
             </div>
         </div>
+
+        <hr class="my-5">
 
         <div class="row text-center" *ngIf="c.third_container as contain">
             <div class="title-card">

@@ -1,23 +1,19 @@
 {
-    "title": "Contacts Us",
-    "subtitle": "@REALLYGREATSITE",
+    "title": "AZIENDA AGRICOLA PERTUSIO ROBERTO<br>P.IVA  03787850043",
+    "subtitle": "@IPASTORIDELROERO",
     "img": "../../../../assets//images/contact.jpg",
     "info": [
         {
             "icon": "phone",
-            "label": "123-456-7890"
+            "label": "+39 331 72 47 188"
         },
         {
             "icon": "mail",
-            "label": "hello@reallygreatsite.com"
-        },
-        {
-            "icon": "language",
-            "label": "WWW.reallygreatsite.COM"
+            "label": "cisaliceto@libero.it"
         },
         {
             "icon": "place",
-            "label": "123 anywhere st., any city"
+            "label": "San Lorenzo 9A, santo stefano roero (cn)"
         }
     ]
 }

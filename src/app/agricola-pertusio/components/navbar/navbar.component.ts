@@ -4,9 +4,10 @@ import { MatSidenav } from '@angular/material/sidenav';
 import { MenuNavbarModel } from './menu-navbar.interface';
 
 @Component( {
-  selector: 'app-navbar',
-  templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.scss']
+    selector: 'app-navbar',
+    templateUrl: './navbar.component.html',
+    styleUrls: ['./navbar.component.scss'],
+    standalone: false
 } )
 export class NavbarComponent implements OnInit {
   @Input() sidenav!: MatSidenav;

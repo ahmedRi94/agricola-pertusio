@@ -54,6 +54,11 @@ mat-toolbar-row {
         line-height: 1;
     }
 
+    .logo-image {
+        width: 125px;
+        margin-left: 5px;
+    }
+
     .btn-contact {
         border: 1px solid var(--tertiary);
         padding: 10px 100px;

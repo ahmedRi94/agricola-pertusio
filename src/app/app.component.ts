@@ -6,7 +6,8 @@ import { Platform } from './agricola-pertusio/utils/platform.class';
 @Component( {
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  standalone: false
 } )
 export class AppComponent {
   title = 'agricola-pertusio';
@@ -26,14 +27,15 @@ export class AppComponent {
       path: "/latte-e-formaggi",
       label: ["Latte e", "formaggi"]
     },
-    {
-      path: "/gallery",
-      label: ["Gallery"]
-    },
+    // {
+    //   path: "/gallery",
+    //   label: ["Gallery"]
+    // },
     {
       path: "/home-page",
       label: ["Agricola", "pertusio"],
-      propertyName: "logo"
+      propertyName: "logo",
+      imgUrl: "../../../../assets/images/logo.jpg"
     },
     {
       path: "/contact",
@@ -48,12 +50,12 @@ export class AppComponent {
   constructor(
     private readonly router: Router
   ) {
-    this.selected = sessionStorage.getItem( 'selected' ) && Number( sessionStorage.getItem( 'selected' ) ) === 4 && !Platform.isMobile() ? 0 : Number( sessionStorage.getItem( 'selected' ) )
+    this.selected = sessionStorage.getItem( 'selected' ) && Number( sessionStorage.getItem( 'selected' ) ) === 3 && !Platform.isMobile() ? 0 : Number( sessionStorage.getItem( 'selected' ) )
     this.router.navigateByUrl( this.menu[this.selected].path )
   }
 
   changePath( path: string ) {
     this.router.navigateByUrl( path )
-    this.selected === 4 && !Platform.isMobile() ? location.reload() : null
+    this.selected === 3 && !Platform.isMobile() ? location.reload() : null
   }
 }
