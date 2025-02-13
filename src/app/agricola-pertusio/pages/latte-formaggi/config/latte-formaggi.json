@@ -1,68 +1,22 @@
 {
-    "img": [
-        [
-            {
-                "path": "../../../assets/images/lat-form1.jpg",
-                "propertyName": "vertical",
-                "height": "60"
-            },
-            {
-                "path": "../../../assets/images/exp4.jpg",
-                "propertyName": "horizontal",
-                "height": "40"
-            }
-        ],
-        [
-            {
-                "path": "../../../assets/images/lat-form2.jpg",
-                "propertyName": "horizontal",
-                "height": "75"
-            },
-            {
-                "path": "../../../assets/images/lat-form8.jpg",
-                "propertyName": "vertical",
-                "height": "25"
-            }
-        ],
-        [
-            {
-                "path": "../../../assets/images/lat-form3.jpg",
-                "propertyName": "vertical",
-                "height": "40"
-            },
-            {
-                "path": "../../../assets/images/lat-form4.jpg",
-                "propertyName": "horizontal",
-                "height": "60"
-            }
-        ],
-        [
-            {
-                "path": "../../../assets/images/lat-form7.jpg",
-                "propertyName": "last",
-                "height": "30"
-            },
-            {
-                "title": [
-                    "Latte e ",
-                    "Formaggi"
-                ],
-                "propertyName": "desc",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                "height": "70"
-            }
-        ],
-        [
-            {
-                "path": "../../../assets/images/lat-form5.jpg",
-                "propertyName": "last",
-                "height": "15"
-            },
-            {
-                "path": "../../../assets/images/lat-form6.jpg",
-                "propertyName": "last",
-                "height": "15"
-            }
-        ]
+    "title": "Formaggi",
+    "description": "Tutto il nostro latte viene lavorato direttamente in azienda entro massimo un'ora dalla mungitura e i nostri prodotti contengono solo 3 ingredienti: latte, caglio vegetale e sale.",
+    "data": [
+        {
+            "description": "Tufo di Monteu: robiola affinata  in grotte del 1300",
+            "imgUrl": "../../../assets/images/lat-form1.jpg"
+        },
+        {
+            "description": "Tomini freschi",
+            "imgUrl": "../../../assets/images/lat-form2.jpg"
+        },
+        {
+            "description": "Roerina: formaggio semistagionato affinato nel vino Roero",
+            "imgUrl": "../../../assets/images/lat-form3.jpg"
+        },
+        {
+            "description": "Robiola del Roero: formaggio fresco a lavorazione  lattica ",
+            "imgUrl": "../../../assets/images/lat-form4.jpg"
+        }
     ]
 }

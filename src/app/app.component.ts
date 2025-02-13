@@ -10,7 +10,7 @@ import { Platform } from './agricola-pertusio/utils/platform.class';
   standalone: false
 } )
 export class AppComponent {
-  title = 'agricola-pertusio';
+  title = 'i-pastori-del-roero';
 
   sticky = false;
 
@@ -20,6 +20,10 @@ export class AppComponent {
       label: ["Home"]
     },
     {
+      path: "/dicono-di-noi",
+      label: ["Dicono", "di noi"]
+    },
+    {
       path: "/goat-experience",
       label: ["Goat", "experience"]
     },
@@ -27,13 +31,9 @@ export class AppComponent {
       path: "/latte-e-formaggi",
       label: ["Latte e", "formaggi"]
     },
-    // {
-    //   path: "/gallery",
-    //   label: ["Gallery"]
-    // },
     {
       path: "/home-page",
-      label: ["Agricola", "pertusio"],
+      label: ["i pastori", "del roero"],
       propertyName: "logo",
       imgUrl: "../../../../assets/images/logo.jpg"
     },
@@ -50,12 +50,12 @@ export class AppComponent {
   constructor(
     private readonly router: Router
   ) {
-    this.selected = sessionStorage.getItem( 'selected' ) && Number( sessionStorage.getItem( 'selected' ) ) === 3 && !Platform.isMobile() ? 0 : Number( sessionStorage.getItem( 'selected' ) )
+    this.selected = sessionStorage.getItem( 'selected' ) && Number( sessionStorage.getItem( 'selected' ) ) === 4 && !Platform.isMobile() ? 0 : Number( sessionStorage.getItem( 'selected' ) )
     this.router.navigateByUrl( this.menu[this.selected].path )
   }
 
   changePath( path: string ) {
     this.router.navigateByUrl( path )
-    this.selected === 3 && !Platform.isMobile() ? location.reload() : null
+    this.selected === 4 && !Platform.isMobile() ? location.reload() : null
   }
 }

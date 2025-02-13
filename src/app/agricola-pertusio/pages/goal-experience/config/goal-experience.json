@@ -3,7 +3,7 @@
         [
             {
                 "path": "../../../assets/images/exp1.jpg",
-                "propertyName": "vertical"
+                "propertyName": "vertical mb-2"
             },
             {
                 "path": "../../../assets/images/exp3.jpg",
@@ -13,7 +13,7 @@
         [
             {
                 "path": "../../../assets/images/exp2.jpg",
-                "propertyName": "horizontal"
+                "propertyName": "horizontal mb-2"
             },
             {
                 "path": "../../../assets/images/exp4.jpg",
@@ -24,18 +24,20 @@
     "data": [
         {
             "title": [
-                "Goal",
+                "Goat",
                 "Experience"
             ],
             "propertyName": "title"
         },
         {
             "title": [
-                "Collaboriamo con numerose cantine e tour operator per effettuare degustazioni. Con la possibilità di:",
-                "-Passeggiata nei boschi del roero in dolce compagnia del nostro gregge durante la quale racconteremo tutto sull’allevamento etico e sostenibile",
-                "-Degustazione di formaggi freschi e stagionati di nostra produzione.",
-                "-Mungitura a mano per vivere un 'esperienza d’altri tempi",
-                "-Laboratorio di caseificazione,trasformiamo il latte appena munto in formaggio."
+                "Collaboriamo con numerose cantine e tour operator per effettuare degustazioni. Con la possibilità di:"
+            ],
+            "list": [
+                "Passeggiata nei boschi del roero in dolce compagnia del nostro gregge durante la quale racconteremo tutto sull’allevamento etico e sostenibile",
+                "Degustazione di formaggi freschi e stagionati di nostra produzione.",
+                "Mungitura a mano per vivere un 'esperienza d’altri tempi",
+                "Laboratorio di caseificazione,trasformiamo il latte appena munto in formaggio."
             ],
             "propertyName": "desc"
         }

@@ -50,8 +50,7 @@ mat-toolbar-row {
     .logo-name {
         color: var(--tertiary);
         font-family: 'the Seasons';
-        font-size: var(--font-large);
-        line-height: 1;
+        font-size: calc(var(--font-large) + 5px);
     }
 
     .logo-image {

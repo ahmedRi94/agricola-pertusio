@@ -1,54 +1,32 @@
-<ng-container *ngIf="content as c">
-    <h1 class="title text-center">{{c.title}}</h1>
-    <div class="container">
-        <div class="row">
-            <div class="col" [ngClass]="{'p-0':sizeWindow<400 && item.img, 'text-center':sizeWindow<400 && item.img}"
-                *ngFor="let item of c.first_container">
-                <p>
+<div class="container" *ngIf="content as c">
+    @for (cont of c.first_container; track $index) {
+    <div class="">
+        <h1 class="title text-center">{{cont.title}}</h1>
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-md-5 col-lg-6 {{item.class}}" *ngFor="let item of cont.content">
                     <span *ngIf="!item.img; else img">{{item.title}}</span>
                     <ng-template #img>
-                        <img [src]="item.img" [alt]="item.alt">
+                        <img class="w-100" [src]="item.img" [alt]="item.alt">
                     </ng-template>
-                </p>
+                </div>
             </div>
+            <hr class="my-5">
         </div>
+    </div>
+    }
 
-        <hr class="my-5">
-
-        <div class="row my-5">
-            <div [ngClass]="{'p-0':sizeWindow<400 && !first, 'text-center':sizeWindow<400 && !first}"
-                class="col{{getCorrectlyCol(first)}} d-flex align-self-center"
-                *ngFor="let item of c.second_container; let first = first">
-                <ng-container *ngIf="first; else img">
-                    <ng-container *ngFor="let col of item; let f = first">
-                        <div class="short-div">
-                            <div class="subtitle text-center">
-                                {{col.title|uppercase}}
-                            </div>
-                            <div>
-                                {{col.subtitle}}
-                            </div>
-                        </div>
-                        <!-- <hr class="my-5" *ngIf="f"> -->
-                    </ng-container>
-                </ng-container>
-                <ng-template #img>
-                    <img [src]="item[0].img" [alt]="item[0].alt">
-                </ng-template>
-            </div>
+    <div class="row d-flex justify-content-center" *ngIf="c.second_container as contain">
+        <div class="title-card text-center">
+            {{contain.title|uppercase}}
         </div>
-
-        <hr class="my-5">
-
-        <div class="row text-center" *ngIf="c.third_container as contain">
-            <div class="title-card">
-                {{contain.title|uppercase}}
-            </div>
-            <div class="col card" *ngFor="let item of contain.card; let last= last"
-                [class.me-5]="!last&&sizeWindow>900">
-                <div class="my-3">{{item.title|uppercase}}</div>
-                <span class="">{{item.desc}}</span>
+        <div class="row d-flex justify-content-between text-center">
+            <div class="col-md-4 col-sm-12 my-5" *ngFor="let item of contain.card; let last = last">
+                <div class="card h-100">
+                    <div class="my-3 title">{{item.title | uppercase}}</div>
+                    <span class="desc">{{item.desc}}</span>
+                </div>
             </div>
         </div>
     </div>
-</ng-container>
+</div>

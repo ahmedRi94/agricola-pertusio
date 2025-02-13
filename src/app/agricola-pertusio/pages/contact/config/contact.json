@@ -1,7 +1,7 @@
 {
     "title": "AZIENDA AGRICOLA PERTUSIO ROBERTO<br>P.IVA  03787850043",
     "subtitle": "@IPASTORIDELROERO",
-    "img": "../../../../assets//images/contact.jpg",
+    "img": "../../../../assets/images/contact.jpg",
     "info": [
         {
             "icon": "phone",
@@ -13,7 +13,14 @@
         },
         {
             "icon": "place",
-            "label": "San Lorenzo 9A, santo stefano roero (cn)"
+            "label": "San Lorenzo 9A, Santo Stefano Roero (CN)",
+            "roadSign": true
+        },
+        {
+            "icon": "../../../../assets/icons/instagram.png",
+            "label": "@IPASTORIDELROERO",
+            "url": "https://www.instagram.com/ipastoridelroero/",
+            "instagram": true
         }
     ]
 }

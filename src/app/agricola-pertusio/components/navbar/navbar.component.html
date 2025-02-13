@@ -10,12 +10,13 @@
                 </div>
                 <ng-template #anotherType>
                     <div class="d-flex justify-content-center" *ngIf="menu.propertyName==='logo'; else contacts">
-                        <div class="logo-name py-4">
-                            <div *ngFor="let item of menu.label">
-                                {{ item|uppercase }}
-                            </div>
+                        <div class="logo-name align-self-center">
+                            {{ menu.label[0]|uppercase }}
                         </div>
-                        <img [src]="menu.imgUrl" alt="Logo" class="logo-image">
+                        <img [src]="menu.imgUrl" alt="Logo" class="logo-image mx-2">
+                        <div class="logo-name align-self-center">
+                            {{ menu.label[1]|uppercase }}
+                        </div>
                     </div>
                     <ng-template #contacts>
                         <div class="btn-contact py-4">

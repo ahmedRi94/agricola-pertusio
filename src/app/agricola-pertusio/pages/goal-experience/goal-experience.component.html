@@ -2,7 +2,9 @@
     <div class="photos justify-content-between">
         <div class="row-img justify-content-end">
             <div class="column" *ngFor="let item of content.img">
-                <img class="" *ngFor="let img of item" [src]="img.path" style="width:100%">
+                <div class="{{img.propertyName}}" *ngFor="let img of item">
+                    <img class="w-100 h-100" [src]="img.path">
+                </div>
             </div>
         </div>
         <div class="description" [class]="sizeWindow>992?'ms-5':'m-auto'">
@@ -10,6 +12,17 @@
                 <div class="{{item.propertyName}}" *ngFor="let title of item.title">
                     {{title}}
                 </div>
+                @if (item.list) {
+                <div class="mt-3">
+                    @for (list of item.list; track $index) {
+                    <ul class="list-unstyled">
+                        <li class="list-item">
+                            {{list}}
+                        </li>
+                    </ul>
+                    }
+                </div>
+                }
             </div>
         </div>
     </div>

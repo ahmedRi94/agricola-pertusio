@@ -1,33 +1,36 @@
 {
-    "title": "LA NOSTRA AZIENDA",
     "first_container": [
         {
-            "title": "Una piccola realtà nel cuore del Roero.\nAlleviamo capre allo stato semibrado per produrre formaggi di alta qualità."
+            "title": "LA NOSTRA AZIENDA",
+            "content": [
+                {
+                    "title": "Una piccola realtà nel cuore del Roero.\nAlleviamo capre allo stato semibrado per produrre formaggi di alta qualità.\nSeguiamo un ciclo naturale sia per i nostri animali che per i mostri prodotti, a dimostrazione che un agricoltura poco impattante può esistere.",
+                    "class": "paragraph p-3"
+                },
+                {
+                    "title": "",
+                    "img": "../../../../assets/images/img1.jpg",
+                    "alt": "Nostre immagini",
+                    "class": "image"
+                }
+            ]
         },
         {
-            "title": "",
-            "img": "../../../../assets/images/img1.jpg",
-            "alt": "Nostre immagini"
-        },
-        {
-            "title": "Seguiamo un ciclo naturale sia per i nostri animali che per i mostri prodotti, a dimostrazione che un agricoltura poco impattante può esistere."
+            "title": "Presidio SlowFood",
+            "content": [
+                {
+                    "img": "../../../../assets/images/img2.jpg",
+                    "alt": "Nostre immagini",
+                    "class": "image"
+                },
+                {
+                    "title": "Prati stabili e pascoli sono l'emblema del perfetto equilibrio tra natura ed esseri umani, tra rispetto dell'ambiente e produzione di reditto, tra mondo selvatico e saperi millenari. Una parte importante della cultura, dell'identità e dei paesaggi delle comunità.",
+                    "class": "paragraph p-3"
+                }
+            ]
         }
     ],
-    "second_container": [
-        [
-            {
-                "title": "Presidio SlowFood",
-                "subtitle": "Prati stabili e pascoli sono l'emblema del perfetto equilibrio tra natura ed esseri umani, tra rispetto dell'ambiente e produzione di reditto, tra mondo selvatico e saperi millenari. Una parte importante della cultura, dell'identità e dei paesaggi delle comunità."
-            }
-        ],
-        [
-            {
-                "img": "../../../../assets/images/img2.jpg",
-                "alt": "Nostre immagini"
-            }
-        ]
-    ],
-    "third_container": {
+    "second_container": {
         "title": "I NOSTRI VALORI",
         "card": [
             {

@@ -7,6 +7,7 @@ import { HomeModule } from './pages/home/home.module';
 import { GoalExperienceModule } from './pages/goal-experience/goal-experience.module';
 import { LatteFormaggiModule } from './pages/latte-formaggi/latte-formaggi.module';
 import { ContactModule } from './pages/contact/contact.module';
+import { DiconoDiNoiModule } from './pages/dicono-di-noi/dicono-di-noi.module';
 
 @NgModule( {
   imports: [
@@ -26,6 +27,7 @@ export class AgricolaPertusioModule {
     ContactModule,
     LatteFormaggiModule,
     GoalExperienceModule,
-    HomeModule
+    HomeModule,
+    DiconoDiNoiModule
   ]
 }

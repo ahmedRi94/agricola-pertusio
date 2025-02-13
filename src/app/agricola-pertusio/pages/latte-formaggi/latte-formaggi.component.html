@@ -1,20 +1,21 @@
-<div class="container-fluid p-5 m-auto position-relative">
-    <div class="photos d-block justify-content-between">
-        <div class="row-img justify-content-center w-100">
-            <div class="column" [ngClass]="{ 'h-100':i>=3}" *ngFor="let item of content.img;let i = index">
-                <div style="height:{{img.height}}%;" [class.d-flex]="img.propertyName!=='last'"
-                    *ngFor="let img of item">
-                    <img *ngIf="img.path" class="w-100" [src]="img.path">
-                    <div class="mt-5 paragraph" *ngIf="img.propertyName ==='desc'">
-                        <div class="title" *ngFor="let tit of img.title">
-                            {{tit}}
-                        </div>
-                        <div class="desc" *ngIf="img.propertyName==='desc'">
-                            {{img.description}}
-                        </div>
-                    </div>
+@if (content; as c) {
+<div class="container">
+    <div class="text-center my-5">
+        <h1 class="title">{{c.title}}</h1>
+        <p class="section-description">{{c.description}}</p>
+    </div>
+
+    <div class="row g-4">
+        @for (item of c.data; track $index) {
+        <div class="col-12 col-sm-6 col-lg-3">
+            <div class="image-card">
+                <img [src]="item.imgUrl" alt="{{item.description}}" class="img-fluid">
+                <div class="image-description">
+                    <p>{{item.description}}</p>
                 </div>
             </div>
         </div>
+        }
     </div>
 </div>
+}

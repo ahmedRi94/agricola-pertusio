@@ -1,0 +1,19 @@
+{
+    "title": "Dicono di noi",
+    "description": "Da una tradizione di famiglia e dalla volontà di riproporre un’antica passione i fratelli Pertusio, Paolo e Roberto, fin da sempre han coltivato l'amore per gli animali e per l’allevamento di essi in totale rispetto per l’ambiente.Dopo aver terminato gli studi in ambito agrario, quasi per gioco e avendo imparato qualche segreto dal padre Angelo, hanno iniziato a sviluppare un interesse per l’attività casearia crescendo di giorno in giorno e rendendolo il fulcro del loro lavoro.Tutta la loro azienda si basa sulla manodopera famigliare, con una profonda  dedizione al lavoro, sempre pronti a ricercare l’eccellenzza per migliorare e crescere.",
+    "links": [
+        {
+            "title": "virtuquotidiane",
+            "url": "https://www.virtuquotidiane.it/cronaca/i-pastori-del-roero-e-la-difesa-dei-prati-stabili-la-ricchezza-celata-oltre-la-vite.html"
+        },
+        {
+            "title": "cheese slowfood",
+            "url": "https://cheese.slowfood.it/evento/il-tufo-di-monteu-roero-un-formaggio-nuovo-e-sconosciuto/"
+        },
+        {
+            "title": "terramadresalonedelgusto",
+            "url": "https://2024.terramadresalonedelgusto.com/scheda_espositore/pertusio-roberto-i-pastori-del-roero/"
+        }
+    ],
+    "imgUrl": "../../../assets/images/img1.jpg"
+}

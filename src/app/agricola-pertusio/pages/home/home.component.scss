@@ -25,8 +25,7 @@ p {
 .card {
     background: var(--secondary);
     color: var(--tertiary);
-    padding-bottom: 20px;
-    margin-bottom: 100px;
+    padding: 20px;
 
     div {
         font-size: var(--font-large);
@@ -39,6 +38,17 @@ p {
         text-align: justify;
     }
 
+}
+
+.image {
+    max-width: 500px;
+}
+
+.paragraph {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    font-size: 30px;
 }
 
 @media (min-width:$mobile-big) and (max-width: $mini-tablet) {
@@ -75,12 +85,22 @@ p {
 }
 
 @media (max-width: $mobile-big) {
+    .paragraph {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .image {
+        padding: 0;
+    }
+
     .title {
-        font-size: var(--font-normal);
+        font-size: var(--font-large);
         margin-bottom: 50px;
     }
 
-    p {
+    p,
+    span {
         font-size: var(--font-small);
     }
 
@@ -96,8 +116,12 @@ p {
         padding-bottom: 20px;
         margin-bottom: 100px;
 
-        div {
+        .title {
             font-size: var(--font-small);
+        }
+
+        .desc {
+            font-size: var(--font-extra-small);
         }
     }
 }

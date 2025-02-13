@@ -1,22 +1,30 @@
 @import "/src/styles/media-screen-variables";
 
-mat-icon,
-.desc {
+mat-icon {
     color: var(--secondary);
 }
 
 .desc {
-    font-size: var(--font-normal);
+    font-size: var(--font-large);
+    color: black;
+    width: 300px;
 }
 
-.icon mat-icon {
-    font-size: calc(var(--font-normal)*2);
-    height: 100%;
-    width: 100%;
+.icon {
+    mat-icon {
+        font-size: calc(var(--font-normal)*2);
+        height: 100%;
+        width: 100%;
+    }
+
+    img {
+        width: 30px;
+    }
 }
 
 .subtitle {
     font-size: calc(var(--font-normal) - 3px);
+    cursor: pointer;
 }
 
 .img {
@@ -32,8 +40,17 @@ mat-icon,
     }
 }
 
+.title {
+    font-size: var(--font-normal);
+}
+
 .cursor-pointer {
     cursor: pointer;
+}
+
+.navigate-link {
+    color: black;
+    text-decoration: none;
 }
 
 @media(max-width:$laptop) {
@@ -69,11 +86,6 @@ mat-icon,
     }
 
     .desc {
-        width: 65% !important;
+        width: 45% !important;
     }
-
-    .icon mat-icon {
-        width: 35% !important;
-    }
-
 }
