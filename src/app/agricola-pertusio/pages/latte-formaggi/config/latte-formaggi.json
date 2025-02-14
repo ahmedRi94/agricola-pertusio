@@ -4,19 +4,19 @@
     "data": [
         {
             "description": "Tufo di Monteu: robiola affinata  in grotte del 1300",
-            "imgUrl": "../../../assets/images/lat-form1.jpg"
+            "imgUrl": "../../../assets/images/tufo.jpg"
         },
         {
             "description": "Tomini freschi",
-            "imgUrl": "../../../assets/images/lat-form2.jpg"
+            "imgUrl": "../../../assets/images/tomini.jpg"
         },
         {
             "description": "Roerina: formaggio semistagionato affinato nel vino Roero",
-            "imgUrl": "../../../assets/images/lat-form3.jpg"
+            "imgUrl": "../../../assets/images/roerina.jpg"
         },
         {
             "description": "Robiola del Roero: formaggio fresco a lavorazione  lattica ",
-            "imgUrl": "../../../assets/images/lat-form4.jpg"
+            "imgUrl": "../../../assets/images/robiola.jpg"
         }
     ]
 }

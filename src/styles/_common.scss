@@ -1,4 +1,4 @@
-@import "media-screen-variables";
+@use "media-screen-variables" as *;
 
 .container {
     margin-top: 80px;

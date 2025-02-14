@@ -1,4 +1,4 @@
-@import "variables-color";
+@use "variables-color" as *;
 
 :root {
     --font-extra-small: 13px;

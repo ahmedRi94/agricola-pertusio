@@ -1,18 +1,18 @@
 /*custom variables*/
-@import "variables";
-@import "./font";
+@use "variables";
+@use "./font";
 
 /*theming material*/
-@import "@angular/material/theming";
+@use "@angular/material/theming";
 
 /* Importing bootstrap */
-@import "bootstrap/scss/bootstrap";
+@use "bootstrap/scss/bootstrap";
 
 /* material theme */
-@import "./material_theme";
+@use "./material_theme";
 
 /*custom scss*/
-@import "common";
+@use "common";
 
 html,
 mat-sidenav-content {

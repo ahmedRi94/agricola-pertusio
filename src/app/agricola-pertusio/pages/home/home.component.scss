@@ -1,4 +1,4 @@
-@import "/src/styles/media-screen-variables";
+@use "/src/styles/media-screen-variables" as *;
 
 .title {
     font-size: var(--font-extra-large);

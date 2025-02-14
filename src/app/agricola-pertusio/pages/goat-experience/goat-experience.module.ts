@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { GoalExperienceComponent } from './goal-experience.component';
+import { GoatExperienceComponent } from './goat-experience.component';
 
 @NgModule( {
   declarations: [
-    GoalExperienceComponent
+    GoatExperienceComponent
   ],
   imports: [
     CommonModule
   ],
   exports: [
-    GoalExperienceComponent
+    GoatExperienceComponent
   ]
 } )
-export class GoalExperienceModule {}
+export class GoatExperienceModule {}

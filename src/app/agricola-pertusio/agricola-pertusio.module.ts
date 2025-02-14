@@ -4,7 +4,7 @@ import { AgricolaPertusioRoutingModule } from './agricola-pertusio-routing.modul
 import { UiComponentsModule } from './components/ui-components.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { HomeModule } from './pages/home/home.module';
-import { GoalExperienceModule } from './pages/goal-experience/goal-experience.module';
+import { GoatExperienceModule } from './pages/goat-experience/goat-experience.module';
 import { LatteFormaggiModule } from './pages/latte-formaggi/latte-formaggi.module';
 import { ContactModule } from './pages/contact/contact.module';
 import { DiconoDiNoiModule } from './pages/dicono-di-noi/dicono-di-noi.module';
@@ -26,7 +26,7 @@ export class AgricolaPertusioModule {
   static customModule = [
     ContactModule,
     LatteFormaggiModule,
-    GoalExperienceModule,
+    GoatExperienceModule,
     HomeModule,
     DiconoDiNoiModule
   ]

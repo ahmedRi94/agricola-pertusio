@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
-import { GoalExperienceComponent } from './pages/goal-experience/goal-experience.component';
+import { GoatExperienceComponent } from './pages/goat-experience/goat-experience.component';
 import { LatteFormaggiComponent } from './pages/latte-formaggi/latte-formaggi.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { DiconoDiNoiComponent } from './pages/dicono-di-noi/dicono-di-noi.component';
@@ -22,7 +22,7 @@ const routes: Routes = [
   },
   {
     path: 'goat-experience',
-    component: GoalExperienceComponent
+    component: GoatExperienceComponent
   },
   {
     path: 'latte-e-formaggi',
