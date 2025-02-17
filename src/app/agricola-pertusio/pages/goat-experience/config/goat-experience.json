@@ -1,25 +1,21 @@
 {
-    "img": [
-        [
-            {
-                "path": "../../../assets/images/exp1.jpg",
-                "propertyName": "vertical mb-2"
-            },
-            {
-                "path": "../../../assets/images/exp3.jpg",
-                "propertyName": "horizontal"
-            }
-        ],
-        [
-            {
-                "path": "../../../assets/images/exp2.jpg",
-                "propertyName": "horizontal mb-2"
-            },
-            {
-                "path": "../../../assets/images/exp4.jpg",
-                "propertyName": "vertical"
-            }
-        ]
+    "images": [
+        {
+            "image": "../../../assets/images/exp1.jpg",
+            "title": ""
+        },
+        {
+            "image": "../../../assets/images/exp3.jpg",
+            "title": ""
+        },
+        {
+            "image": "../../../assets/images/exp2.jpg",
+            "title": ""
+        },
+        {
+            "image": "../../../assets/images/exp4.jpg",
+            "title": ""
+        }
     ],
     "data": [
         {

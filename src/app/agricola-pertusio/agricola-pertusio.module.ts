@@ -15,7 +15,7 @@ import { DiconoDiNoiModule } from './pages/dicono-di-noi/dicono-di-noi.module';
     CommonModule,
     BrowserModule,
     AgricolaPertusioRoutingModule,
-    AgricolaPertusioModule.customModule
+    AgricolaPertusioModule.customModule,
   ],
   exports: [
     AgricolaPertusioModule.customModule,

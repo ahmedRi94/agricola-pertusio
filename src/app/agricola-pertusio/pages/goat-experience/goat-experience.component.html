@@ -1,11 +1,17 @@
-<div class="container">
+<div class="container mb-3">
     <div class="photos justify-content-between">
-        <div class="row-img justify-content-end">
-            <div class="column" *ngFor="let item of content.img">
-                <div class="{{img.propertyName}}" *ngFor="let img of item">
-                    <img class="w-100 h-100" [src]="img.path">
-                </div>
-            </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 left-section">
+            <carousel #carousel [interval]="4000" class="carousel">
+                @for (slide of content.images; track $index) {
+                <slide>
+                    <img [src]="slide.image" alt="slide">
+                    <div class="carousel-caption">
+                        <h4>{{ slide.title }}</h4>
+                        <p>{{ slide.description }}</p>
+                    </div>
+                </slide>
+                }
+            </carousel>
         </div>
         <div class="description" [class]="sizeWindow>992?'ms-5':'m-auto'">
             <div *ngFor="let item of content.data">

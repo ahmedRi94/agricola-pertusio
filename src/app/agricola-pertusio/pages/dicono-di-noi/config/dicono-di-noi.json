@@ -15,5 +15,22 @@
             "url": "https://2024.terramadresalonedelgusto.com/scheda_espositore/pertusio-roberto-i-pastori-del-roero/"
         }
     ],
-    "imgUrl": "../../../assets/images/img1.jpg"
+    "imgUrl": "../../../assets/images/img1.jpg",
+    "images": [
+        {
+            "image": "../../../assets/images/dicono-di-noi-1.jpg",
+            "title": "",
+            "description": ""
+        },
+        {
+            "image": "../../../assets/images/dicono-di-noi-2.jpg",
+            "title": "",
+            "description": ""
+        },
+        {
+            "image": "../../../assets/images/dicono-di-noi-3.jpg",
+            "title": "",
+            "description": ""
+        }
+    ]
 }
